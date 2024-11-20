@@ -58,12 +58,12 @@ const Home = () => {
             <div className="h-16 w-full bg-white  flex justify-center items-center shadow-md rounded-2xl p-1 my-2 ">
               <input
                 type="text"
-                className="w-full h-full px-6 text-md outline-none"
+                className="w-full h-full px-6 text-md outline-none bg-white"
                 placeholder="Ask me any legal questions..."
               />
-              <IoAdd className="text-4xl ml-2 cursor-pointer" />
-              <RxDividerVertical className="text-4xl text-gray-300" />
-              <LuSendHorizonal className="w-6 h-6 mr-4 cursor-pointer" />
+              <IoAdd className="text-4xl ml-2 cursor-pointer bg-white" />
+              <RxDividerVertical className="text-4xl text-gray-300 bg-white" />
+              <LuSendHorizonal className="w-6 h-6 mr-4 cursor-pointer bg-white" />
             </div>
             <div className="m-2">
               <p className="text-[#7F8C8D] text-sm">
