@@ -1,7 +1,11 @@
 import React from "react";
-
-const Popup = () => {
-  return <div className="fixed w-full h-full bg-black/40"></div>;
+import Form from "./Form";
+const Popup = (props) => {
+  return (
+    <div className="fixed mx-auto w-full h-full bg-black/40 flex justify-center items-center">
+      <Form closePopup={props.closePopup} />
+    </div>
+  );
 };
 
 export default Popup;

@@ -14,12 +14,15 @@ const Home = () => {
   const displayPopup = () => {
     setPopup(true);
   };
+  const closePopup = () => {
+    setPopup(false);
+  };
 
   return (
     <>
-      {popup && <Popup />}
+      {popup && <Popup closePopup={closePopup} />}
       {<true /> && (
-        <div className="w-full  pl-24 box-border bg-[#F7F6F2]">
+        <div className=" container w-full  pl-24 box-border bg-[#F7F6F2]">
           <div className=" px-16 py-8  flex justify-center items-center flex-col">
             <div className="text-center">
               <p className="text-2xl text-[#686868] p-2">Good morning, Ryan!</p>
@@ -27,7 +30,7 @@ const Home = () => {
                 How can we help you today?
               </p>
             </div>
-            <div className="p-8 pb-20 w-full flex justify-center items-center gap-8  ">
+            <div className="p-8 pb-20 w-full flex justify-center items-center gap-8">
               <Templets
                 logo={logoDoc}
                 headText="Drafr a new document"
